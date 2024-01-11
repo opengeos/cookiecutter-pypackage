@@ -1,0 +1,87 @@
+[project]
+name = "{{ cookiecutter.github_repo_name }}"
+version = "{{ cookiecutter.version }}"
+dynamic = [
+    "dependencies",
+]
+description = "{{ cookiecutter.project_short_description }}"
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = [
+    "{{ cookiecutter.github_repo_name }}",
+]
+license = {text = "{{ cookiecutter.open_source_license }}"}
+authors = [
+  {name = "{{ cookiecutter.full_name.replace('\"', '\\\"') }}", email = "{{ cookiecutter.email }}"},
+]
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: {{ cookiecutter.open_source_license }}",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[project.entry-points."console_scripts"]
+{{ cookiecutter.project_slug }} = "{{ cookiecutter.project_slug }}.cli:main"
+
+[project.optional-dependencies]
+all = [
+    "{{ cookiecutter.github_repo_name }}[extra]",
+]
+
+extra = [
+    "datapane",
+]
+
+
+[tool]
+[tool.setuptools.packages.find]
+include = ["{{ cookiecutter.project_slug }}*"]
+exclude = ["docs*"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+
+[tool.distutils.bdist_wheel]
+universal = true
+
+
+[tool.bumpversion]
+current_version = "{{ cookiecutter.version }}"
+commit = true
+tag = true
+
+[[tool.bumpversion.files]]
+filename = "pyproject.toml"
+search = 'version = "{current_version}"'
+replace = 'version = "{new_version}"'
+
+[[tool.bumpversion.files]]
+filename = "{{ cookiecutter.project_slug }}/__init__.py"
+search = '__version__ = "{current_version}"'
+replace = '__version__ = "{new_version}"'
+
+
+
+
+[tool.flake8]
+exclude = [
+    "docs",
+]
+max-line-length = 88
+
+[tool.setuptools_scm]
+
+
+
+[project.urls]
+Homepage = "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.github_repo_name }}"
+
+[build-system]
+requires = ["setuptools>=64", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"

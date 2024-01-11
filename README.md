@@ -56,27 +56,3 @@ Then:
 **4. Introduction to Python package file structure**
 
 [![](http://img.youtube.com/vi/0eLt_O6sIYU/0.jpg)](http://www.youtube.com/watch?v=0eLt_O6sIYU)
-
-## Not Exactly What You Want?
-
-Don't worry, you have options:
-
-### Similar Cookiecutter Templates
-
--   [audreyfeldroy/cookiecutter-pypackage](https://github.com/audreyfeldroy/cookiecutter-pypackage): Cookiecutter template for a Python package.
-
-### Fork This / Create Your Own
-
-If you have differences in your preferred setup, I encourage you to fork
-this to create your own version. Or create your own; it doesn't strictly
-have to be a fork.
-
--   Once you have your own version working, add it to the Similar
-    Cookiecutter Templates list above with a brief description.
--   It's up to you whether or not to rename your fork/own version. Do
-    whatever you think sounds good.
-
-### Or Submit a Pull Request
-
-I also accept pull requests on this, if they're small, atomic, and if
-they make my own packaging experience better.
