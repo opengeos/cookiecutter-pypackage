@@ -1,7 +1,7 @@
 # Cookiecutter PyPackage
 
 [![image](https://github.com/opengeos/cookiecutter-pypackage/workflows/build/badge.svg)](https://github.com/opengeos/cookiecutter-pypackage/actions?query=workflow%3Abuild)
-[![image](https://github.com/opengeos/cookiecutter-pypackage/workflows/docs/badge.svg)](https://open.gishub.org/pypackage)
+[![image](https://github.com/opengeos/cookiecutter-pypackage/workflows/docs/badge.svg)](https://open.gishub.org/cookiecutter-pypackage)
 
 [Cookiecutter](https://github.com/cookiecutter/cookiecutter) template for a Python package.
 

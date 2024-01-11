@@ -12,7 +12,7 @@ setup(
     author_email="giswqs@gmail.com",
     url="https://github.com/opengeos/cookiecutter-pypackage",
     keywords=["cookiecutter", "template", "package", "mkdocs"],
-    python_requires=">=3.7",
+    python_requires=">=3.8",
     classifiers=[
         "Intended Audience :: Developers",
         "Natural Language :: English",
