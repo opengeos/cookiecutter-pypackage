@@ -1,0 +1,62 @@
+site_name: pypackage
+
+site_url: https://open.gishub.org/pypackage
+
+repo_url: https://github.com/opengeos/cookiecutter-pypackage
+
+theme:
+    palette:
+        - scheme: default
+          #   primary: blue
+          #   accent: indigo
+          toggle:
+              icon: material/toggle-switch-off-outline
+              name: Switch to dark mode
+        - scheme: slate
+          primary: indigo
+          accent: indigo
+          toggle:
+              icon: material/toggle-switch
+              name: Switch to light mode
+    name: material
+    icon:
+        repo: fontawesome/brands/github
+    logo: assets/logo.png
+    favicon: assets/favicon.png
+    features:
+        - navigation.instant
+        - navigation.tracking
+        - navigation.top
+        - search.highlight
+        - search.share
+    custom_dir: "docs/overrides"
+    font:
+        text: Google Sans
+        code: Regular
+
+plugins:
+    - search
+    - mkdocstrings
+    - git-revision-date
+
+markdown_extensions:
+    - attr_list
+    - pymdownx.superfences
+    - pymdownx.highlight:
+          linenums: true
+    - toc:
+          permalink: true
+
+# google_analytics:
+#     - UA-XXXXXXXXX-X
+#     - auto
+
+nav:
+    - Home: index.md
+    - Installation: installation.md
+    - Usage: usage.md
+    - Contributing: contributing.md
+    - FAQ: faq.md
+    - Report Issues: https://github.com/opengeos/cookiecutter-pypackage/issues
+    - API Reference:
+          - pypackage module: pypackage.md

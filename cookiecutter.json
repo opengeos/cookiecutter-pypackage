@@ -1,0 +1,29 @@
+{
+    "full_name": "Firstname Lastname",
+    "email": "admin@example.com",
+    "github_username": "username",
+    "project_name": "Python Boilerplate",
+    "github_repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
+    "project_slug": "{{ cookiecutter.github_repo_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "project_short_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",
+    "pypi_username": "{{ cookiecutter.github_username }}",
+    "version": "0.0.1",
+    "use_pytest": "n",
+    "add_pyup_badge": "n",
+    "create_author_file": "n",
+    "command_line_interface": [
+        "No command-line interface",
+        "Click",
+        "Argparse"
+    ],
+    "open_source_license": [
+        "MIT license",
+        "BSD license",
+        "ISC license",
+        "Apache Software License 2.0",
+        "GNU General Public License v3",
+        "Not open source"
+    ],
+    "github_default_branch": ["main", "master"],
+    "_copy_without_render": ["docs/overrides/main.html"]
+}
