@@ -1,11 +1,12 @@
 on:
     push:
         branches:
-            - main
+            - {{cookiecutter.github_default_branch}}
     pull_request:
         branches:
-            - main
+            - {{cookiecutter.github_default_branch}}
 
+{% raw %}
 name: Linux installation
 jobs:
     test-ubuntu:
@@ -24,3 +25,4 @@ jobs:
               run: pip install .
             - name: Test import
               run: python -c "import leafmap; print('leafmap import successful')"
+{% endraw %}
