@@ -13,7 +13,7 @@
 
 -   Testing setup with `unittest` and `python setup.py test` or `pytest`
 -   GitHub actions: Ready for GitHub Continuous Integration testing
--   [bump2version](https://github.com/c4urself/bump2version): Pre-configured version bumping with a single command
+-   [bump-my-version](https://github.com/callowayproject/bump-my-version): Pre-configured version bumping with a single command
 -   Auto-release to [PyPI](https://pypi.python.org/pypi) when you push a new tag to master (optional)
 -   Command line interface using Click (optional)
 
