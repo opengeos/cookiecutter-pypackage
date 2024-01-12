@@ -34,7 +34,7 @@ all = [
 ]
 
 extra = [
-    "datapane",
+    "pandas",
 ]
 
 
@@ -67,16 +67,11 @@ search = '__version__ = "{current_version}"'
 replace = '__version__ = "{new_version}"'
 
 
-
-
 [tool.flake8]
 exclude = [
     "docs",
 ]
 max-line-length = 88
-
-[tool.setuptools_scm]
-
 
 
 [project.urls]
