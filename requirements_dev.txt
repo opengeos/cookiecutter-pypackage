@@ -1,7 +1,0 @@
-pytest
-tox
-cookiecutter
-pytest-cookies
-alabaster
-watchdog
-pyyaml
