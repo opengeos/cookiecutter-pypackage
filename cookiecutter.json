@@ -25,5 +25,6 @@
         "Not open source"
     ],
     "github_default_branch": ["main", "master"],
+    "python_version": "3.11",
     "_copy_without_render": ["docs/overrides/main.html"]
 }

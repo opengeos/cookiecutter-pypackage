@@ -6,7 +6,7 @@ on:
         branches:
             - {{cookiecutter.github_default_branch}}
 
-{% raw %}
+
 name: Linux installation
 jobs:
     test-ubuntu:
@@ -14,7 +14,8 @@ jobs:
         strategy:
             fail-fast: false
             matrix:
-                python-version: ["3.11"]
+                python-version: ["{{cookiecutter.python_version}}"]
+{% raw %}
         steps:
             - uses: actions/checkout@v3
             - name: Set up Python
@@ -24,5 +25,5 @@ jobs:
             - name: Install package
               run: pip install .
             - name: Test import
-              run: python -c "import leafmap; print('leafmap import successful')"
+              run: python -c "import numpy; print('numpy import successful')"
 {% endraw %}

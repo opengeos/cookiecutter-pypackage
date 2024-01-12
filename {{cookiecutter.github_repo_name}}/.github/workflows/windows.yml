@@ -1,10 +1,10 @@
 on:
     push:
         branches:
-            - {{cookiecutter.github_default_branch}}
+            - {{ cookiecutter.github_default_branch }}
     pull_request:
         branches:
-            - {{cookiecutter.github_default_branch}}
+            - {{ cookiecutter.github_default_branch }}
 
 name: Windows build
 jobs:
@@ -16,7 +16,8 @@ jobs:
               uses: conda-incubator/setup-miniconda@v2
               with:
                   auto-activate-base: true
-                  python-version: "3.11"
+                  python-version: "{{cookiecutter.python_version}}"
+{% raw %}
             - name: Install GDAL
               run: conda install -c conda-forge gdal --yes
             - name: Test GDAL installation
@@ -29,3 +30,4 @@ jobs:
                   pip install --no-cache-dir Cython
                   pip install -r requirements.txt
                   pip install .
+{% endraw %}

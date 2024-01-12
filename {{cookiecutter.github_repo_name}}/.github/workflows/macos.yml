@@ -11,11 +11,13 @@ jobs:
     test-macOS:
         runs-on: ${{ matrix.os }}
         name: ${{ matrix.os }} (${{ matrix.python-version}})
+{% endraw %}
         strategy:
             fail-fast: false
             matrix:
               os: ["macOS-latest"]
-              python-version: ["3.11"]
+              python-version: ["{{cookiecutter.python_version}}"]
+{% raw %}
         steps:
           - name: Checkout code
             uses: actions/checkout@v3

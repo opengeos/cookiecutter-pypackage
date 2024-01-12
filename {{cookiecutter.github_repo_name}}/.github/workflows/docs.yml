@@ -2,7 +2,7 @@ name: docs
 on:
     push:
         branches:
-            - {{cookiecutter.github_default_branch}}
+            - {{ cookiecutter.github_default_branch }}
 jobs:
     deploy:
         runs-on: ubuntu-latest
@@ -10,7 +10,8 @@ jobs:
             - uses: actions/checkout@v3
             - uses: actions/setup-python@v4
               with:
-                  python-version: "3.11"
+                  python-version: "{{cookiecutter.python_version}}"
+{% raw %}
             - name: Install dependencies
               run: |
                   python -m pip install --upgrade pip
@@ -20,9 +21,10 @@ jobs:
             - name: Discover typos with codespell
               run: |
                   pip install codespell
-                  codespell --skip="*.csv,*.geojson,*.json,*.js,*.html,*cff,./.git" --ignore-words-list="aci,acount,acounts,fallow,hart,hist,nd,ned,ois,wqs,watermask"
+                  codespell --skip="*.csv,*.geojson,*.json,*.js,*.html,*cff,./.git" --ignore-words-list="aci,hist"
             - name: PKG-TEST
               run: |
                   python -m unittest discover tests/
             - run: pip install -r requirements_docs.txt
             - run: mkdocs gh-deploy --force
+{% endraw %}
