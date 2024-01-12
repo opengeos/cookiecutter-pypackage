@@ -4,7 +4,7 @@ site_author: {{ cookiecutter.github_username }}
 site_url: https://{{ cookiecutter.github_username }}.github.io/{{ cookiecutter.github_repo_name }}
 repo_url: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.github_repo_name }}
 
-copyright: "Copyright &copy; 2023 - 2023 {{ cookiecutter.full_name }}"
+copyright: "Copyright &copy; 2024 - 2024 {{ cookiecutter.full_name }}"
 
 theme:
     palette:

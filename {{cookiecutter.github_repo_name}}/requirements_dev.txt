@@ -1,7 +1,7 @@
 black
 black[jupyter]
 pip
-bump2version
+bump-my-version
 wheel
 watchdog
 flake8
