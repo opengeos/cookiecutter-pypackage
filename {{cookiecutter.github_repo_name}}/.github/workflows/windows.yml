@@ -1,10 +1,10 @@
 on:
     push:
         branches:
-            - { { cookiecutter.github_default_branch } }
+            - {{cookiecutter.github_default_branch}}
     pull_request:
         branches:
-            - { { cookiecutter.github_default_branch } }
+            - {{cookiecutter.github_default_branch}}
 
 name: Windows build
 jobs:
