@@ -149,18 +149,6 @@ Remember to replace placeholders (like `your-package-name` and `[your-repository
 
 ## Video Tutorials
 
-**1. Creating a Python package with Cookiecutter Template**
+**Creating a Python package with Cookiecutter Template**
 
-[![](http://img.youtube.com/vi/DAPAv9KbYZ0/0.jpg)](http://www.youtube.com/watch?v=DAPAv9KbYZ0)
-
-**2. Publishing Python packages on PyPI**
-
-[![](http://img.youtube.com/vi/7FcX9uWDuIQ/0.jpg)](http://www.youtube.com/watch?v=7FcX9uWDuIQ)
-
-**3. Deploying Python packages to PyPI using GitHub Actions**
-
-[![](http://img.youtube.com/vi/oayticDOZmU/0.jpg)](http://www.youtube.com/watch?v=oayticDOZmU)
-
-**4. Introduction to Python package file structure**
-
-[![](http://img.youtube.com/vi/0eLt_O6sIYU/0.jpg)](http://www.youtube.com/watch?v=0eLt_O6sIYU)
+[![](http://img.youtube.com/vi/Z2d1Kw1xSVY/0.jpg)](https://www.youtube.com/watch?v=Z2d1Kw1xSVY)
