@@ -19,8 +19,6 @@
 
 ## Usage
 
-    pip install -U cookiecutter
-
 This guide provides detailed steps on how to create a Python package, configure it for distribution, and manage its versioning and releases. First, install `cookiecutter` and `bump-my-version` and then follow the steps below.
 
 ```bash
@@ -48,7 +46,7 @@ git commit -m "Initial commit"
 
 ### 3. Create a Repository on GitHub
 
--   Go to [GitHub](https://github.com/) and create a new repository.
+-   Go to [GitHub](https://github.com/) and create a new empty repository.
 -   Do NOT initialize it with a README, license, or .gitignore file.
 
 ### 4. Add Git Remote
