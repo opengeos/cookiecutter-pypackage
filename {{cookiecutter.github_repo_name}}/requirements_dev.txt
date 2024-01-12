@@ -1,16 +1,29 @@
 black
 black[jupyter]
-pip
+build
 bump-my-version
+codespell
 wheel
-watchdog
 flake8
-tox
-coverage
-Sphinx
 twine
-{% if cookiecutter.command_line_interface|lower == 'click' -%}
-Click{% endif %}
-{% if cookiecutter.use_pytest == 'y' -%}
+click
 pytest
-pytest-runner{% endif %}
+pytest-runner
+
+ipykernel
+livereload
+nbconvert
+nbformat
+sphinx
+watchdog
+mkdocs
+mkdocs-git-revision-date-plugin 
+mkdocs-git-revision-date-localized-plugin
+mkdocs-jupyter>=0.24.0
+mkdocs-material>=9.1.3 
+mkdocs-pdf-export-plugin
+mkdocstrings 
+mkdocstrings-crystal
+mkdocstrings-python-legacy
+pygments
+pymdown-extensions
