@@ -1,10 +1,12 @@
 on:
     push:
         branches:
-            - {{ cookiecutter.github_default_branch }}
+            - main
+            - master
     pull_request:
         branches:
-            - {{ cookiecutter.github_default_branch }}
+            - main
+            - master
 
 name: Windows build
 jobs:
