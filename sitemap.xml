@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://open.gishub.org/pypackage/</loc>
+         <lastmod>2025-03-19</lastmod>
+    </url>
+    <url>
+         <loc>https://open.gishub.org/pypackage/contributing/</loc>
+         <lastmod>2025-03-19</lastmod>
+    </url>
+    <url>
+         <loc>https://open.gishub.org/pypackage/faq/</loc>
+         <lastmod>2025-03-19</lastmod>
+    </url>
+    <url>
+         <loc>https://open.gishub.org/pypackage/installation/</loc>
+         <lastmod>2025-03-19</lastmod>
+    </url>
+    <url>
+         <loc>https://open.gishub.org/pypackage/pypackage/</loc>
+         <lastmod>2025-03-19</lastmod>
+    </url>
+    <url>
+         <loc>https://open.gishub.org/pypackage/usage/</loc>
+         <lastmod>2025-03-19</lastmod>
+    </url>
+</urlset>
